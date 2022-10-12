@@ -51,8 +51,8 @@ def get_jobs(url):
             continue
         job_lists.append(data)
     print(job_lists)
-    # dataframe = pd.DataFrame(job_lists)
-    # return dataframe
+    dataframe = pd.DataFrame(job_lists)
+    return dataframe
 get_jobs(current_url)
-# df = get_jobs(current_url)
-# print(df)
+df = get_jobs(current_url)
+print(df)
